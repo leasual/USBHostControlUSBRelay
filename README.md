@@ -2,10 +2,11 @@
 
 [参考USB Relay标准库](https://github.com/pavel-a/usb-relay-hid/blob/master/lib/usb_relay_lib.c)
 
-通过USB Manager 查找到USBDevice列表找到对应的USB设备，
-获取Interface,找到Endpoint，
-打开设备进行操作，
-使用controlTransfer收发指令
+通过USB Manager 查找到USBDevice列表找到对应的USB设备，    
+    
+    获取Interface,找到Endpoint，
+    打开设备进行操作，
+    使用controlTransfer收发指令
 
 重点：需要先打开USB Relay设备，才能操控，否则，controlTransfer会一直返回-1.
 
